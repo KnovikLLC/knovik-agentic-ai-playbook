@@ -15,7 +15,7 @@ Together, they are what separates a conversational AI from an agent that can act
 
 ## The four types of memory
 
-### 1. In-context memory (conversation buffer)
+### In-context memory (conversation buffer)
 
 The simplest form. Everything the agent has said and received stays in the current context window.
 
@@ -36,7 +36,7 @@ messages = [
 
 ---
 
-### 2. External memory (vector store)
+### External memory (vector store)
 
 Long-term storage retrieved by semantic similarity. The agent stores summaries or facts in a vector database, then retrieves relevant memories when needed.
 
@@ -62,7 +62,7 @@ results = vectorstore.similarity_search(
 
 ---
 
-### 3. Entity memory
+### Entity memory
 
 Structured storage for facts about specific entities — products, users, companies. Keeps a persistent record that updates as the agent learns more.
 
@@ -85,7 +85,7 @@ CrewAI has built-in entity memory when you set `memory=True` on a Crew. LangGrap
 
 ---
 
-### 4. Episodic memory (run history)
+### Episodic memory (run history)
 
 Records of past agent runs — what was tried, what succeeded, what failed. Used to avoid repeating mistakes.
 
