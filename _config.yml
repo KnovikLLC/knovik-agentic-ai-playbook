@@ -1,6 +1,5 @@
 title: "Knovik AI Engineering Playbook"
 author: "Knovik Engineering Team"
-logo: assets/logo.png
 copyright: "2026 Knivok (Private) Limited"
 
 only_build_toc_files: true
@@ -25,7 +24,6 @@ html:
   use_edit_page_button: true
   home_page_in_navbar: false
   announcement: "🚀 Knovik internal engineering resource - open to all. PRs welcome!"
-  favicon: assets/favicon.ico
   extra_navbar: |
     <a href="https://knovik.com" target="_blank">knovik.com</a>
 
