@@ -4,7 +4,7 @@
 
 ---
 
-```{image} ../../assets/banner.png
+```
 :alt: Knovik AI Engineering Playbook
 :align: center
 ```
