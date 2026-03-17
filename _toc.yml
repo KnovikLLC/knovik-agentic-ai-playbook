@@ -5,7 +5,6 @@ parts:
   - caption: "Part 0 — Foundations"
     numbered: true
     chapters:
-      - file: notebooks/00_foundations/index
       - file: notebooks/00_foundations/01_what_is_agentic_ai
       - file: notebooks/00_foundations/02_agent_loop
       - file: notebooks/00_foundations/03_memory_and_tools
