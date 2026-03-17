@@ -57,7 +57,7 @@ For local setup, see {doc}`notebooks/00_foundations/04_setup_environment`.
 
 ## Contributing
 
-This book lives at [github.com/knivok/ai-playbook](https://github.com/knivok/ai-playbook).
+This book lives at [https://github.com/knivok/ai-playbook](https://knovikllc.github.io/knovik-agentic-ai-playbook/).
 
 - **Add a recipe**: Create a notebook in `notebooks/03_knovik_recipes/` and open a PR
 - **Fix an error**: Use the "suggest edit" button on any page
