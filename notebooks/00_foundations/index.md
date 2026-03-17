@@ -5,6 +5,7 @@
 ---
 
 <h1 align="center">Knovik AI Engineering Playbook</h1>
+<p>Designed and Developed by Madusanka Premaratne for Knovik Engineering Department</p>
 
 ---
 
