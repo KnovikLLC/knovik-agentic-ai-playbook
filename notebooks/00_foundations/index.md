@@ -63,5 +63,5 @@ This book lives at [https://github.com/knivok/ai-playbook](https://knovikllc.git
 - **Fix an error**: Use the "suggest edit" button on any page
 - **Add a framework chapter section**: Follow the structure in any existing framework `index.md`
 
-**Owner:** Deelaka Kariyawasam (R&D Lead)  
+**Owner:** Deelaka Kariyawasam (R&D Lead) / Iroshana Wickremasinghe (VP Engineering)
 **Last updated:** March 2026
