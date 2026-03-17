@@ -1,0 +1,71 @@
+title: "Knovik AI Engineering Playbook"
+author: "Knovik Engineering Team"
+logo: assets/logo.png
+copyright: "2026 Knivok (Private) Limited"
+
+only_build_toc_files: true
+
+execute:
+  execute_notebooks: "off"
+  timeout: 120
+
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_admonition
+    - html_image
+    - substitution
+    - tasklist
+
+html:
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  home_page_in_navbar: false
+  announcement: "🚀 Knovik internal engineering resource - open to all. PRs welcome!"
+  favicon: assets/favicon.ico
+  extra_navbar: |
+    <a href="https://knovik.com" target="_blank">knovik.com</a>
+
+  extra_footer: |
+    <p>Built by <a href="https://knovik.com" target="_blank">Knovik Engineering</a> · 
+    <a href="https://github.com/knivok/ai-playbook" target="_blank">Contribute on GitHub</a></p>
+
+  google_analytics_id: ""
+
+  thebe_config:
+    use_thebe_lite: true
+    exclude_patterns:
+      - "**/*.md"
+
+launch_buttons:
+  notebook_interface: "classic"
+  colab_url: "https://colab.research.google.com"
+  binderhub_url: "https://mybinder.org"
+
+repository:
+  url: https://github.com/knivok/ai-playbook
+  path_to_book: .
+  branch: main
+
+bibtex_bibfiles:
+  - references.bib
+
+sphinx:
+  extra_extensions:
+    - sphinx_inline_tabs
+    - sphinx_copybutton
+  config:
+    html_theme_options:
+      repository_url: "https://github.com/knivok/ai-playbook"
+      use_repository_button: true
+      use_issues_button: true
+      use_edit_page_button: true
+      launch_buttons:
+        colab_url: "https://colab.research.google.com"
+      show_navbar_depth: 2
+      show_toc_level: 2
+      announcement: ""
+      extra_navbar: ""

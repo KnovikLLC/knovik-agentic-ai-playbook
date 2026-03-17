@@ -1,0 +1,45 @@
+name: Build and Deploy Jupyter Book
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install jupyter-book sphinx-inline-tabs sphinx-copybutton myst-parser
+
+      - name: Build the book
+        run: |
+          jupyter-book build .
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "_build/html"
+
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        id: deployment
+        uses: actions/deploy-pages@v4

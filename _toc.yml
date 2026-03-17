@@ -1,0 +1,98 @@
+format: jb-book
+root: notebooks/00_foundations/index
+
+parts:
+  - caption: "Part 0 — Foundations"
+    numbered: true
+    chapters:
+      - file: notebooks/00_foundations/index
+      - file: notebooks/00_foundations/01_what_is_agentic_ai
+      - file: notebooks/00_foundations/02_agent_loop
+      - file: notebooks/00_foundations/03_memory_and_tools
+      - file: notebooks/00_foundations/04_setup_environment
+
+  - caption: "Part 1 — Frameworks"
+    numbered: true
+    chapters:
+      - file: notebooks/01_frameworks/langgraph/index
+        sections:
+          - file: notebooks/01_frameworks/langgraph/01_intro
+          - file: notebooks/01_frameworks/langgraph/02_state_and_nodes
+          - file: notebooks/01_frameworks/langgraph/03_conditional_edges
+          - file: notebooks/01_frameworks/langgraph/04_human_in_the_loop
+          - file: notebooks/01_frameworks/langgraph/05_demo_niche_researcher
+
+      - file: notebooks/01_frameworks/crewai/index
+        sections:
+          - file: notebooks/01_frameworks/crewai/01_intro
+          - file: notebooks/01_frameworks/crewai/02_agents_and_roles
+          - file: notebooks/01_frameworks/crewai/03_tasks_and_crews
+          - file: notebooks/01_frameworks/crewai/04_tools_integration
+          - file: notebooks/01_frameworks/crewai/05_demo_content_crew
+
+      - file: notebooks/01_frameworks/autogen/index
+        sections:
+          - file: notebooks/01_frameworks/autogen/01_intro
+          - file: notebooks/01_frameworks/autogen/02_agent_chat
+          - file: notebooks/01_frameworks/autogen/03_group_chat
+          - file: notebooks/01_frameworks/autogen/04_human_in_the_loop
+          - file: notebooks/01_frameworks/autogen/05_demo_hr_workflow
+
+      - file: notebooks/01_frameworks/llamaindex/index
+        sections:
+          - file: notebooks/01_frameworks/llamaindex/01_intro
+          - file: notebooks/01_frameworks/llamaindex/02_documents_and_indexes
+          - file: notebooks/01_frameworks/llamaindex/03_query_engines
+          - file: notebooks/01_frameworks/llamaindex/04_agents
+          - file: notebooks/01_frameworks/llamaindex/05_demo_answee_rag
+
+      - file: notebooks/01_frameworks/smol_agents/index
+        sections:
+          - file: notebooks/01_frameworks/smol_agents/01_intro
+          - file: notebooks/01_frameworks/smol_agents/02_local_models_ollama
+          - file: notebooks/01_frameworks/smol_agents/03_code_agents
+          - file: notebooks/01_frameworks/smol_agents/04_gdpr_architecture
+          - file: notebooks/01_frameworks/smol_agents/05_demo_edge_agent
+
+      - file: notebooks/01_frameworks/agno/index
+        sections:
+          - file: notebooks/01_frameworks/agno/01_intro
+          - file: notebooks/01_frameworks/agno/02_agents_and_teams
+          - file: notebooks/01_frameworks/agno/03_memory_and_storage
+          - file: notebooks/01_frameworks/agno/04_demo_fast_prototype
+
+      - file: notebooks/01_frameworks/metagpt/index
+        sections:
+          - file: notebooks/01_frameworks/metagpt/01_intro
+          - file: notebooks/01_frameworks/metagpt/02_roles_and_actions
+          - file: notebooks/01_frameworks/metagpt/03_software_dev_pipeline
+          - file: notebooks/01_frameworks/metagpt/04_demo_automated_spec
+
+  - caption: "Part 2 — Decision Layer"
+    numbered: true
+    chapters:
+      - file: notebooks/02_decision_layer/index
+      - file: notebooks/02_decision_layer/01_decision_tree
+      - file: notebooks/02_decision_layer/02_performance_comparison
+      - file: notebooks/02_decision_layer/03_cost_analysis
+      - file: notebooks/02_decision_layer/04_framework_matrix
+
+  - caption: "Part 3 — Knovik Recipes"
+    numbered: true
+    chapters:
+      - file: notebooks/03_knovik_recipes/index
+      - file: notebooks/03_knovik_recipes/01_answee_qa_agent
+      - file: notebooks/03_knovik_recipes/02_nichexpert_research_pipeline
+      - file: notebooks/03_knovik_recipes/03_aihr_workflow_agent
+      - file: notebooks/03_knovik_recipes/04_marketing_content_crew
+      - file: notebooks/03_knovik_recipes/05_gdpr_compliant_eu_agent
+
+  - caption: "Part 4 — Production"
+    numbered: true
+    chapters:
+      - file: notebooks/04_production/index
+      - file: notebooks/04_production/01_observability_langsmith
+      - file: notebooks/04_production/02_cost_control
+      - file: notebooks/04_production/03_prompt_injection_defense
+      - file: notebooks/04_production/04_gdpr_and_eu_compliance
+      - file: notebooks/04_production/05_deployment_patterns
