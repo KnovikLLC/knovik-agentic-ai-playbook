@@ -5,7 +5,7 @@
 [![Deploy Jupyter Book](https://github.com/knivok/ai-playbook/actions/workflows/deploy.yml/badge.svg)](https://github.com/knivok/ai-playbook/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**📖 Read online:** [knivok.github.io/ai-playbook](https://knivok.github.io/ai-playbook)
+** 📖 Read online:** [Knivok Agentic AI Playbook](https://knovikllc.github.io/knovik-agentic-ai-playbook/notebooks/)
 
 ---
 
@@ -34,8 +34,8 @@ Every chapter notebook has an "Open in Colab" badge. Click and run.
 ### Run locally
 
 ```bash
-git clone https://github.com/knivok/ai-playbook.git
-cd ai-playbook
+git clone https://github.com/KnovikLLC/knovik-agentic-ai-playbook.git
+cd knovik-agentic-ai-playbook
 pip install -r requirements.txt
 jupyter lab
 ```
