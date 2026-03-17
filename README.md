@@ -88,5 +88,5 @@ MIT — open to the community.
 
 ---
 
-**Owner:** Deelaka Kariyawasam, R&D Lead  
+**Owner:** [Knovik R&D Team](dev@knovik.com)  
 **Company:** [Knivok (Private) Limited](https://knovik.com) DBA Knovik
