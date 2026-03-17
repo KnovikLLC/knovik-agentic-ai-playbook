@@ -53,7 +53,7 @@ If you are asking "who should do this?" — use CrewAI.
 
 Everything in CrewAI reduces to four things. Understand these and you understand the whole framework.
 
-**1. Agent** — An LLM with a persona
+1. **Agent** — An LLM with a persona
 ```python
 researcher = Agent(
     role="Market Research Analyst",
@@ -65,7 +65,7 @@ researcher = Agent(
 )
 ```
 
-**2. Task** — A unit of work with expected output
+2. **Task** — A unit of work with expected output
 ```python
 research_task = Task(
     description="Research the {niche} market. Find market size, competitors, growth rate.",
@@ -74,7 +74,7 @@ research_task = Task(
 )
 ```
 
-**3. Crew** — The team + process definition
+3. **Crew** — The team + process definition
 ```python
 crew = Crew(
     agents=[researcher, writer, editor],
@@ -84,7 +84,7 @@ crew = Crew(
 )
 ```
 
-**4. Process** — How tasks execute
+4. **Process** — How tasks execute
 - `Process.sequential` — tasks run one after another, each receiving the previous output
 - `Process.hierarchical` — a manager agent delegates and reviews work
 

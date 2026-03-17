@@ -79,27 +79,27 @@ def get_athbridge_products(category: str) -> str:
 
 ## Tool design principles
 
-**1. Docstrings are system prompts for tool selection.**  
-The agent reads the docstring to decide whether to call the tool. Write it as if explaining to a junior analyst when and why to use this tool.
+1. **Docstrings are system prompts for tool selection.**
+   The agent reads the docstring to decide whether to call the tool. Write it as if explaining to a junior analyst when and why to use this tool.
 
-**2. Always return strings.**  
-CrewAI tools must return strings. If your function returns a dict or list, serialize it:
-```python
-import json
-return json.dumps(result, indent=2)
-```
+2. **Always return strings.**
+   CrewAI tools must return strings. If your function returns a dict or list, serialize it:
+   ```python
+   import json
+   return json.dumps(result, indent=2)
+   ```
 
-**3. Handle errors gracefully — never raise.**  
-If a tool raises an exception, the agent gets confused. Return an error string instead:
-```python
-try:
-    # ... tool logic
-except Exception as e:
-    return f"Tool failed: {str(e)}. Try a different approach."
-```
+3. **Handle errors gracefully — never raise.**
+   If a tool raises an exception, the agent gets confused. Return an error string instead:
+   ```python
+   try:
+       # ... tool logic
+   except Exception as e:
+       return f"Tool failed: {str(e)}. Try a different approach."
+   ```
 
-**4. Keep tool scope narrow.**  
-One tool, one job. Do not build a `do_everything_marketing_tool`. Build `get_keyword_search_volume`, `get_competitor_keywords`, `get_serp_position` separately. Narrow tools are easier to debug and easier for agents to use correctly.
+4. **Keep tool scope narrow.**
+   One tool, one job. Do not build a `do_everything_marketing_tool`. Build `get_keyword_search_volume`, `get_competitor_keywords`, `get_serp_position` separately. Narrow tools are easier to debug and easier for agents to use correctly.
 
 ---
 
