@@ -4,10 +4,7 @@
 
 ---
 
-```
-:alt: Knovik AI Engineering Playbook
-:align: center
-```
+<h1 align="center">Knovik AI Engineering Playbook</h1>
 
 ---
 
