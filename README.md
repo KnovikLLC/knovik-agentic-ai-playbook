@@ -2,7 +2,6 @@
 
 > A collaborative, runnable guide to agentic AI frameworks for Knovik engineers and the broader community.
 
-[![Deploy Jupyter Book](https://github.com/knivok/ai-playbook/actions/workflows/deploy.yml/badge.svg)](https://github.com/knivok/ai-playbook/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ** 📖 Read online:** [Knivok Agentic AI Playbook](https://knovikllc.github.io/knovik-agentic-ai-playbook/notebooks/)
