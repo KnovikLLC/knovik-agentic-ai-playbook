@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install jupyter-book sphinx-inline-tabs sphinx-copybutton myst-parser
+          pip install "jupyter-book==0.15.1" sphinx-inline-tabs sphinx-copybutton myst-parser
 
       - name: Build the book
         run: |
